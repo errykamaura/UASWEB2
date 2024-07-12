@@ -77,6 +77,7 @@ Route::group(['middleware' => ['auth', 'cekrole:Admin']], function () {
     Route::post('/admin/kriteria/form/postkriteria', [CriteriaController::class, 'postkriteria'])->name('postkriteria');
     Route::get('/admin/kriteria/formedit/{id}', [CriteriaController::class, 'tampileditkriteria'])->name('editkriteria');
     Route::post('/admin/kriteria/formedit/updatekriteria/{id}', [CriteriaController::class, 'updatekriteria'])->name('updatekriteria');
+    
 
     // Data Nilai Kriteria (Sub Kriteria)
     Route::get('/admin/sub', [SubCriteriaController::class, 'index']);
@@ -99,7 +100,7 @@ Route::group(['middleware' => ['auth', 'cekrole:Admin']], function () {
 //CUSTOMER
 Route::group(['middleware' => ['auth', 'cekrole:Admin,Customer']], function () {
     Route::get('/home', [CustomerController::class, 'indexlogin']);
-    Route::get('/detail/{tipe}', [HasilController::class, 'tampildetail']);
+    Route::get('/detail/{id}', [HasilController::class, 'tampildetail'])->name('tampildetail');
 
 
     // Data Alternative
@@ -113,7 +114,8 @@ Route::group(['middleware' => ['auth', 'cekrole:Admin,Customer']], function () {
     Route::post('/ahp/bobot/postmatriks2', [AhpController::class, 'postmatriks2'])->name('postmatriks2');
     Route::post('/ahp/bobot/cekkonsistensi', [AhpController::class, 'cekkonsistensi'])->name('cekkonsistensi');
     Route::post('/ahp/bobot/posthasilrekomendasi', [AhpController::class, 'posthasilrekomendasi'])->name('posthasilrekomendasi');
-    Route::get('/ahp/bobot/kesimpulan/{tipe}', [HasilController::class, 'tampilkesimpulan']);
+    Route::get('/ahp/bobot/kesimpulan/{nama}', [HasilController::class, 'tampilkesimpulan']);
+    Route::get('/ahp/bobot/detail/{id}', [HasilController::class, 'tampildetail']);
 
     // Cetak PDF
     Route::get('/ahp/bobot/kesimpulan/cetak/{tipe}', [HasilController::class, 'cetakpdf']);

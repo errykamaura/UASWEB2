@@ -23,15 +23,15 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Harga</td>
+									<td>Harga</td>
 										<td>
 											<select class="form-control" name="cbhg">
-												<option value="1">Harga Sama Penting dengan Garasi (Nilai = 1)</option>
-												<option value="2">Harga Lebih Penting daripada Garasi (Nilai = 2)</option>
-												<option value="3">Harga Sangat Penting daripada Garasi (Nilai = 3)</option>
+												<option value="1">Harga Sama Penting dengan Jarak Tempat Kerja (Nilai = 1)</option>
+												<option value="2">Harga Lebih Penting daripada Jarak Tempat Kerja (Nilai = 2)</option>
+												<option value="3">Harga Sangat Penting daripada Jarak Tempat Kerja (Nilai = 3)</option>
 											</select>
 										</td>
-										<td>Garasi</td>
+										<td>Jarak Tempat Kerja</td>
 									</tr>
 									<tr>
 										<td>Harga</td>
@@ -48,67 +48,67 @@
 										<td>Harga</td>
 										<td>
 											<select class="form-control" name="cbhk">
-												<option value="1">Harga Sama Penting dengan Kamar (Nilai = 1)</option>
-												<option value="2">Harga Lebih Penting daripada Kamar (Nilai = 2)</option>
-												<option value="3">Harga Sangat Penting daripada Kamar (Nilai = 3)</option>
+												<option value="1">Harga Sama Penting dengan Lokasi (Nilai = 1)</option>
+												<option value="2">Harga Lebih Penting daripada Lokasi (Nilai = 2)</option>
+												<option value="3">Harga Sangat Penting daripada Lokasi (Nilai = 3)</option>
 											</select>
 										</td>
-										<td>Kamar</td>
+										<td>Lokasi</td>
 									</tr>
 									<tr>
 										<td>Harga</td>
 										<td>
 											<select class="form-control" name="cbhl">
-												<option value="1">Harga Sama Penting dengan Lantai (Nilai = 1)</option>
-												<option value="2">Harga Lebih Penting daripada Lantai (Nilai = 2)</option>
-												<option value="3">Harga Sangat Penting daripada Lantai (Nilai = 3)</option>
+												<option value="1">Harga Sama Penting dengan Fasilitas (Nilai = 1)</option>
+												<option value="2">Harga Lebih Penting daripada Fasilitas (Nilai = 2)</option>
+												<option value="3">Harga Sangat Penting daripada Fasilitas (Nilai = 3)</option>
 											</select>
 										</td>
-										<td>Lantai</td>
+										<td>Fasilitas</td>
 									</tr>
 									<tr>
-										<td>Garasi</td>
+										<td>Jarak Tempat Kerja</td>
 										<td>
 											<select class="form-control" name="cbgh">
-												<option value="1">Garasi Sama Penting dengan Harga (Nilai = 1)</option>
-												<option value="2">Garasi Lebih Penting daripada Harga (Nilai = 2)</option>
-												<option value="3">Garasi Sangat Penting daripada Harga (Nilai = 3)</option>
+												<option value="1">Jarak Tempat Kerja Sama Penting dengan Harga (Nilai = 1)</option>
+												<option value="2">Jarak Tempat Kerja Lebih Penting daripada Harga (Nilai = 2)</option>
+												<option value="3">Jarak Tempat Kerja Sangat Penting daripada Harga (Nilai = 3)</option>
 											</select>
 										</td>
 										<td>Harga</td>
 									</tr>
 									<tr>
-										<td>Garasi</td>
+										<td>Jarak Tempat Kerja</td>
 										<td>
 											<select class="form-control" name="cbgs">
-												<option value="1">Garasi Sama Penting dengan Luas (Nilai = 1)</option>
-												<option value="2">Garasi Lebih Penting daripada Luas (Nilai = 2)</option>
-												<option value="3">Garasi Sangat Penting daripada Luas (Nilai = 3)</option>
+												<option value="1">Jarak Tempat Kerja Sama Penting dengan Luas (Nilai = 1)</option>
+												<option value="2">Jarak Tempat Kerja Lebih Penting daripada Luas (Nilai = 2)</option>
+												<option value="3">Jarak Tempat Kerja Sangat Penting daripada Luas (Nilai = 3)</option>
 											</select>
 										</td>
 										<td>Luas</td>
 									</tr>
 									<tr>
-										<td>Garasi</td>
+										<td>Jarak Tempat Kerja</td>
 										<td>
 											<select class="form-control" name="cbgk">
-												<option value="1">Garasi Sama Penting dengan Kamar (Nilai = 1)</option>
-												<option value="2">Garasi Lebih Penting daripada Kamar (Nilai = 2)</option>
-												<option value="3">Garasi Sangat Penting daripada Kamar (Nilai = 3)</option>
+												<option value="1">Jarak Tempat Kerja Sama Penting dengan Lokasi (Nilai = 1)</option>
+												<option value="2">Jarak Tempat Kerja Lebih Penting daripada Lokasi (Nilai = 2)</option>
+												<option value="3">Jarak Tempat Kerja Sangat Penting daripada Lokasi (Nilai = 3)</option>
 											</select>
 										</td>
-										<td>Kamar</td>
+										<td>Lokasi</td>
 									</tr>
 									<tr>
-										<td>Garasi</td>
+										<td>Jarak Tempat Kerja</td>
 										<td>
 											<select class="form-control" name="cbgl">
-												<option value="1">Garasi Sama Penting dengan Lantai (Nilai = 1)</option>
-												<option value="2">Garasi Lebih Penting daripada Lantai (Nilai = 2)</option>
-												<option value="3">Garasi Sangat Penting daripada Lantai (Nilai = 3)</option>
+												<option value="1">Jarak Tempat Kerja Sama Penting dengan Fasilitas (Nilai = 1)</option>
+												<option value="2">Jarak Tempat Kerja Lebih Penting daripada Fasilitas (Nilai = 2)</option>
+												<option value="3">Jarak Tempat Kerja Sangat Penting daripada Fasilitas (Nilai = 3)</option>
 											</select>
 										</td>
-										<td>Lantai</td>
+										<td>Fasilitas</td>
 									</tr>
 									<tr>
 										<td>Luas</td>
@@ -125,119 +125,119 @@
 										<td>Luas</td>
 										<td>
 											<select class="form-control" name="cbsg">
-												<option value="1">Luas Sama Penting dengan Garasi (Nilai = 1)</option>
-												<option value="2">Luas Lebih Penting daripada Garasi (Nilai = 2)</option>
-												<option value="3">Luas Sangat Penting daripada Garasi (Nilai = 3)</option>
+												<option value="1">Luas Sama Penting dengan Jarak Tempat Kerja (Nilai = 1)</option>
+												<option value="2">Luas Lebih Penting daripada Jarak Tempat Kerja (Nilai = 2)</option>
+												<option value="3">Luas Sangat Penting daripada Jarak Tempat Kerja (Nilai = 3)</option>
 											</select>
 										</td>
-										<td>Garasi</td>
+										<td>Jarak Tempat Kerja</td>
 									</tr>
 									<tr>
 										<td>Luas</td>
 										<td>
 											<select class="form-control" name="cbsk">
-												<option value="1">Luas Sama Penting dengan Kamar (Nilai = 1)</option>
-												<option value="2">Luas Lebih Penting daripada Kamar (Nilai = 2)</option>
-												<option value="3">Luas Sangat Penting daripada Kamar (Nilai = 3)</option>
+												<option value="1">Luas Sama Penting dengan Lokasi (Nilai = 1)</option>
+												<option value="2">Luas Lebih Penting daripada Lokasi (Nilai = 2)</option>
+												<option value="3">Luas Sangat Penting daripada Lokasi (Nilai = 3)</option>
 											</select>
 										</td>
-										<td>Kamar</td>
+										<td>Lokasi</td>
 									</tr>
 									<tr>
 										<td>Luas</td>
 										<td>
 											<select class="form-control" name="cbsl">
-												<option value="1">Luas Sama Penting dengan Lantai (Nilai = 1)</option>
-												<option value="2">Luas Lebih Penting daripada Lantai (Nilai = 2)</option>
-												<option value="3">Luas Sangat Penting daripada Lantai (Nilai = 3)</option>
+												<option value="1">Luas Sama Penting dengan Fasilitas (Nilai = 1)</option>
+												<option value="2">Luas Lebih Penting daripada Fasilitas (Nilai = 2)</option>
+												<option value="3">Luas Sangat Penting daripada Fasilitas (Nilai = 3)</option>
 											</select>
 										</td>
-										<td>Lantai</td>
+										<td>Fasilitas</td>
 									</tr>
 									<tr>
-										<td>Kamar</td>
+										<td>Lokasi</td>
 										<td>
 											<select class="form-control" name="cbkh">
-												<option value="1">Kamar Sama Penting dengan Harga (Nilai = 1)</option>
-												<option value="2">Kamar Lebih Penting daripada Harga (Nilai = 2)</option>
-												<option value="3">Kamar Sangat Penting daripada Harga (Nilai = 3)</option>
+												<option value="1">Lokasi Sama Penting dengan Harga (Nilai = 1)</option>
+												<option value="2">Lokasi Lebih Penting daripada Harga (Nilai = 2)</option>
+												<option value="3">Lokasi Sangat Penting daripada Harga (Nilai = 3)</option>
 											</select>
 										</td>
 										<td>Harga</td>
 									</tr>
 									<tr>
-										<td>Kamar</td>
+										<td>Lokasi</td>
 										<td>
 											<select class="form-control" name="cbkg">
-												<option value="1">Kamar Sama Penting dengan Garasi (Nilai = 1)</option>
-												<option value="2">Kamar Lebih Penting daripada Garasi (Nilai = 2)</option>
-												<option value="3">Kamar Sangat Penting daripada Garasi (Nilai = 3)</option>
+												<option value="1">Lokasi Sama Penting dengan Jarak Tempat Kerja (Nilai = 1)</option>
+												<option value="2">Lokasi Lebih Penting daripada Jarak Tempat Kerja (Nilai = 2)</option>
+												<option value="3">Lokasi Sangat Penting daripada Jarak Tempat Kerja (Nilai = 3)</option>
 											</select>
 										</td>
-										<td>Garasi</td>
+										<td>Jarak Tempat Kerja</td>
 									</tr>
 									<tr>
-										<td>Kamar</td>
+										<td>Lokasi</td>
 										<td>
 											<select class="form-control" name="cbks">
-												<option value="1">Kamar Sama Penting dengan Luas (Nilai = 1)</option>
-												<option value="2">Kamar Lebih Penting daripada Luas (Nilai = 2)</option>
-												<option value="3">Kamar Sangat Penting daripada Luas (Nilai = 3)</option>
+												<option value="1">Lokasi Sama Penting dengan Luas (Nilai = 1)</option>
+												<option value="2">Lokasi Lebih Penting daripada Luas (Nilai = 2)</option>
+												<option value="3">Lokasi Sangat Penting daripada Luas (Nilai = 3)</option>
 											</select>
 										</td>
 										<td>Luas</td>
 									</tr>
 									<tr>
-										<td>Kamar</td>
+										<td>Lokasi</td>
 										<td>
 											<select class="form-control" name="cbkl">
-												<option value="1">Kamar Sama Penting dengan Lantai (Nilai = 1)</option>
-												<option value="2">Kamar Lebih Penting daripada Lantai (Nilai = 2)</option>
-												<option value="3">Kamar Sangat Penting daripada Lantai (Nilai = 3)</option>
+												<option value="1">Lokasi Sama Penting dengan Fasilitas (Nilai = 1)</option>
+												<option value="2">Lokasi Lebih Penting daripada Fasilitas (Nilai = 2)</option>
+												<option value="3">Lokasi Sangat Penting daripada Fasilitas (Nilai = 3)</option>
 											</select>
 										</td>
-										<td>Lantai</td>
+										<td>Fasilitas</td>
 									</tr>
 									<tr>
-										<td>Lantai</td>
+										<td>Fasilitas</td>
 										<td>
 											<select class="form-control" name="cblh">
-												<option value="1">Lantai Sama Penting dengan Harga (Nilai = 1)</option>
-												<option value="2">Lantai Lebih Penting daripada Harga (Nilai = 2)</option>
-												<option value="3">Lantai Sangat Penting daripada Harga (Nilai = 3)</option>
+												<option value="1">Fasilitas Sama Penting dengan Harga (Nilai = 1)</option>
+												<option value="2">Fasilitas Lebih Penting daripada Harga (Nilai = 2)</option>
+												<option value="3">Fasilitas Sangat Penting daripada Harga (Nilai = 3)</option>
 											</select>
 										</td>
 										<td>Harga</td>
 									</tr>
 									<tr>
-										<td>Lantai</td>
+										<td>Fasilitas</td>
 										<td>
 											<select class="form-control" name="cblg">
-												<option value="1">Lantai Sama Penting dengan Garasi (Nilai = 1)</option>
-												<option value="2">Lantai Lebih Penting daripada Garasi (Nilai = 2)</option>
-												<option value="3">Lantai Sangat Penting daripada Garasi (Nilai = 3)</option>
+												<option value="1">Fasilitas Sama Penting dengan Jarak Tempat Kerja (Nilai = 1)</option>
+												<option value="2">Fasilitas Lebih Penting daripada Jarak Tempat Kerja (Nilai = 2)</option>
+												<option value="3">Fasilitas Sangat Penting daripada Jarak Tempat Kerja (Nilai = 3)</option>
 											</select>
 										</td>
-										<td>Garasi</td>
+										<td>Jarak Tempat Kerja</td>
 									</tr>
 									<tr>
-										<td>Lantai</td>
+										<td>Fasilitas</td>
 										<td>
 											<select class="form-control" name="cblk">
-												<option value="1">Lantai Sama Penting dengan Kamar (Nilai = 1)</option>
-												<option value="2">Lantai Lebih Penting daripada Kamar (Nilai = 2)</option>
-												<option value="3">Lantai Sangat Penting daripada Kamar (Nilai = 3)</option>
+												<option value="1">Fasilitas Sama Penting dengan Lokasi (Nilai = 1)</option>
+												<option value="2">Fasilitas Lebih Penting daripada Lokasi (Nilai = 2)</option>
+												<option value="3">Fasilitas Sangat Penting daripada Lokasi (Nilai = 3)</option>
 											</select>
 										</td>
-										<td>Kamar</td>
+										<td>Lokasi</td>
 									</tr>
 									<tr>
-										<td>Lantai</td>
+										<td>Fasilitas</td>
 										<td>
 											<select class="form-control" name="cbls">
-												<option value="1">Lantai Sama Penting dengan Luas (Nilai = 1)</option>
-												<option value="2">Lantai Lebih Penting daripada Luas (Nilai = 2)</option>
-												<option value="3">Lantai Sangat Penting daripada Luas (Nilai = 3)</option>
+												<option value="1">Fasilitas Sama Penting dengan Luas (Nilai = 1)</option>
+												<option value="2">Fasilitas Lebih Penting daripada Luas (Nilai = 2)</option>
+												<option value="3">Fasilitas Sangat Penting daripada Luas (Nilai = 3)</option>
 											</select>
 										</td>
 										<td>Luas</td>

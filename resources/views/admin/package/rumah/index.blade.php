@@ -7,7 +7,7 @@
 			<h3 class="page-title">Master Rumah</h3>
 			<div class="row">
 				<a href="/admin/rumah/form">
-					<button type="button" class="btn btn-primary btn-toastr"><i class="fa fa-plus-square"></i> Tambah Data Rumah</button>
+					<!-- <button type="button" class="btn btn-primary btn-toastr"><i class="fa fa-plus-square"></i> Tambah Data Rumah</button> -->
 				</a>
 				<!-- TABLE STRIPED -->
 				<div class="panel">
@@ -24,9 +24,7 @@
 									<th>Lokasi</th>
 									<th width="90px">Luas Tanah</th>
 									<th>Harga</th>
-									<th>Garasi</th>
-									<th width="300px">Keterangan</th>
-									<th>Gambar Rumah</th>
+									<th>Jarak Tempat Kerja</th>
 									<th width="250px">Aksi</th>
 								</tr>
 							</thead>
@@ -40,20 +38,18 @@
 										echo $no++;
 										?>
 									</td>
-									<td>{{ $DR->tipe }}</td>
-									<td>{{ $DR->lantai }}</td>
-									<td>{{ $DR->kamar }}</td>
+									<td>{{ $DR->nama }}</td>
+									<td>{{ $DR->fasilitas }}</td>
+									<td>{{ $DR->lokasi }}</td>
 									<td>{{ $DR->luas }} M<sup>2</sup></td>
 									<td>Rp. {{ $DR->harga }}</td>
-									<td>{{ $DR->garasi }}</td>
-									<td>{{ $DR->keterangan }}</td>
-									<td><img src="{{ url('/data_file/'.$DR->gambar) }}" alt="{{ $DR->gambar }}" width="200px" height="100px"></td>
+									<td>{{ $DR->jarak_tempat_kerja }} KM</td>
 									<td>
 										<button type="button" class="btn btn-info btn-toastr">
 											<a href="/admin/rumah/formedit/{{ $DR->id }}" style="color:white;">Update</a>
 										</button>
 										<button type="button" class="btn btn-danger btn-toastr">
-											<a href="/admin/rumah/hapusrumah/{{ $DR->tipe }}" style="color:white;">Delete</a>
+											<a href="/admin/rumah/hapusrumah/{{ $DR->nama}}" style="color:white;">Delete</a>
 										</button>
 									</td>
 								</tr>

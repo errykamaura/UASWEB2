@@ -11,7 +11,7 @@ class Alternative extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = ['tipe', 'lantai','kamar', 'luas', 'harga', 'garasi', 'keterangan', 'gambar','gambar_denah'];
+    protected $fillable = ['nama', 'fasilitas','lokasi', 'luas', 'harga', 'jarak_tempat_kerja'];
     protected $dates = ['deleted_at'];
 
     // public function getCodeAttribute($value) {

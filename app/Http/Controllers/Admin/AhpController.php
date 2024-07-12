@@ -311,7 +311,7 @@ class AhpController extends Controller
         // $h4 = ($k16*$k31)+($k17*$k32)+($k18*$k33)+($k19*$k34)+($k20*$k35);
         // $h5 = ($k21*$k31)+($k22*$k32)+($k23*$k33)+($k24*$k34)+($k25*$k35);
 
-        // // Menghitung lambda max dulu ges
+        // // Menghitung lambda max
         // $lambdamax = ($h1+$h2+$h3+$h4+$h5)/5;
 
         // // Menghitung CI
@@ -490,42 +490,42 @@ class AhpController extends Controller
     public function posthasilrekomendasi(Request $request)
     {
         // Select data dulu
-        $harga = Comparisons::select('harga')->orderBY('tipe', 'asc')->get();
-        $lantai = Comparisons::select('lantai')->orderBY('tipe', 'asc')->get();
-        $luas = Comparisons::select('luas')->orderBY('tipe', 'asc')->get();
-        $kamar = Comparisons::select('kamar')->orderBY('tipe', 'asc')->get();
-        $garasi = Comparisons::select('garasi')->orderBY('tipe', 'asc')->get();
+        $harga = Comparisons::select('harga')->orderBY('nama', 'asc')->get();
+        $fasilitas = Comparisons::select('fasilitas')->orderBY('nama', 'asc')->get();
+        $luas = Comparisons::select('luas')->orderBY('nama', 'asc')->get();
+        $lokasi = Comparisons::select('lokasi')->orderBY('nama', 'asc')->get();
+        $jarak_tempat_kerja = Comparisons::select('jarak_tempat_kerja')->orderBY('nama', 'asc')->get();
 
         // variabel penampung nilai kedalam array
         $datahargaarr = [];
-        $datalantaiarr = [];
+        $datafasilitasarr = [];
         $dataluasarr = [];
-        $datakamararr = [];
-        $datagarasiarr = [];
+        $datalokasiarr = [];
+        $datajarak_tempat_kerjaarr = [];
 
         // buat masukin data kedalam bentuk array
         foreach ($harga as $itemh) {
             $datahargaarr[] = $itemh->harga;
         }
 
-        foreach ($lantai as $iteml) {
-            $datalantaiarr[] = $iteml->lantai;
+        foreach ($fasilitas as $iteml) {
+            $datafasilitasarr[] = $iteml->fasilitas;
         }
 
         foreach ($luas as $items) {
             $dataluasarr[] = $items->luas;
         }
 
-        foreach ($kamar as $itemk) {
-            $datakamararr[] = $itemk->kamar;
+        foreach ($lokasi as $itemk) {
+            $datalokasiarr[] = $itemk->lokasi;
         }
 
-        foreach ($garasi as $itemg) {
-            $datagarasiarr[] = $itemg->garasi;
+        foreach ($jarak_tempat_kerja as $itemg) {
+            $datajarak_tempat_kerjaarr[] = $itemg->jarak_tempat_kerja;
         }
 
         // buat manggil data arraynya
-        // dd($datahargaarr, $datalantaiarr, $dataluasarr, $datakamararr, $datagarasiarr);
+        // dd($datahargaarr, $datafasilitasarr, $dataluasarr, $datalokasiarr, $datajarak_tempat_kerjaarr);
 
         $t31 = $request->k31;
         $t32 = $request->k32;
@@ -624,18 +624,18 @@ class AhpController extends Controller
         }
 
 
-        // kriteria lantai
+        // kriteria fasilitas
         $hasill = [];
         $j = 0;
         $n = 0;
         $i = 0;
-        for ($m = 0; $m < (sizeof($datalantaiarr) * sizeof($datalantaiarr)) + (sizeof($datalantaiarr) - 1); $m++) {
-            if ($i < sizeof($datalantaiarr)) {
-                $hasill[$n] = $datalantaiarr[$i] / $datalantaiarr[$j];
+        for ($m = 0; $m < (sizeof($datafasilitasarr) * sizeof($datafasilitasarr)) + (sizeof($datafasilitasarr) - 1); $m++) {
+            if ($i < sizeof($datafasilitasarr)) {
+                $hasill[$n] = $datafasilitasarr[$i] / $datafasilitasarr[$j];
                 $i++;
                 $n++;
             } else {
-                if ($j < sizeof($datalantaiarr)) {
+                if ($j < sizeof($datafasilitasarr)) {
                     $j++;
                     $i = 0;
                 }
@@ -643,8 +643,8 @@ class AhpController extends Controller
         }
 
         // Jumlah kolom dan baris
-        $barisl = sizeof($datalantaiarr);
-        $koloml = sizeof($datalantaiarr);
+        $barisl = sizeof($datafasilitasarr);
+        $koloml = sizeof($datafasilitasarr);
         $data2Dl = array();
 
         // konversi jadi array 2d
@@ -670,8 +670,8 @@ class AhpController extends Controller
         $z = 0;
         $hasilbgl = [];
         $i = 0;
-        for ($m = 0; $m < (sizeof($datalantaiarr) * sizeof($datalantaiarr)) + (sizeof($datalantaiarr) - 1); $m++) {
-            if ($i < sizeof($datalantaiarr)) {
+        for ($m = 0; $m < (sizeof($datafasilitasarr) * sizeof($datafasilitasarr)) + (sizeof($datafasilitasarr) - 1); $m++) {
+            if ($i < sizeof($datafasilitasarr)) {
                 $hasilbgl[$z] = $hasill[$z] / $hasiljmll[$i];
                 $i++;
                 $z++;
@@ -700,13 +700,13 @@ class AhpController extends Controller
             $hasiltml[] = $jumlah;
         }
 
-        for ($i = 0; $i < sizeof($datalantaiarr); $i++) {
-            $jumlah = $hasiltml[$i] / sizeof($datalantaiarr);
+        for ($i = 0; $i < sizeof($datafasilitasarr); $i++) {
+            $jumlah = $hasiltml[$i] / sizeof($datafasilitasarr);
             $hasilpml[] = $jumlah;
         }
 
         // Perkalian (asli)
-        for ($i = 0; $i < sizeof($datalantaiarr); $i++) {
+        for ($i = 0; $i < sizeof($datafasilitasarr); $i++) {
             $jumlah = $hasilpml[$i] * $t31;
             $hasilppml[] = $jumlah;
         }
@@ -798,18 +798,18 @@ class AhpController extends Controller
             $hasilppms[] = $jumlah;
         }
 
-        // kriteria kamar
+        // kriteria lokasi
         $hasilk = [];
         $j = 0;
         $n = 0;
         $i = 0;
-        for ($m = 0; $m < (sizeof($datakamararr) * sizeof($datakamararr)) + (sizeof($datakamararr) - 1); $m++) {
-            if ($i < sizeof($datakamararr)) {
-                $hasilk[$n] = $datakamararr[$i] / $datakamararr[$j];
+        for ($m = 0; $m < (sizeof($datalokasiarr) * sizeof($datalokasiarr)) + (sizeof($datalokasiarr) - 1); $m++) {
+            if ($i < sizeof($datalokasiarr)) {
+                $hasilk[$n] = $datalokasiarr[$i] / $datalokasiarr[$j];
                 $i++;
                 $n++;
             } else {
-                if ($j < sizeof($datakamararr)) {
+                if ($j < sizeof($datalokasiarr)) {
                     $j++;
                     $i = 0;
                 }
@@ -817,8 +817,8 @@ class AhpController extends Controller
         }
 
         // Jumlah kolom dan baris
-        $barisk = sizeof($datakamararr);
-        $kolomk = sizeof($datakamararr);
+        $barisk = sizeof($datalokasiarr);
+        $kolomk = sizeof($datalokasiarr);
         $data2Dk = array();
 
         // konversi jadi array 2d
@@ -844,8 +844,8 @@ class AhpController extends Controller
         $z = 0;
         $hasilbgk = [];
         $i = 0;
-        for ($m = 0; $m < (sizeof($datakamararr) * sizeof($datakamararr)) + (sizeof($datakamararr) - 1); $m++) {
-            if ($i < sizeof($datakamararr)) {
+        for ($m = 0; $m < (sizeof($datalokasiarr) * sizeof($datalokasiarr)) + (sizeof($datalokasiarr) - 1); $m++) {
+            if ($i < sizeof($datalokasiarr)) {
                 $hasilbgk[$z] = $hasilk[$z] / $hasiljmlk[$i];
                 $i++;
                 $z++;
@@ -874,29 +874,29 @@ class AhpController extends Controller
             $hasiltmk[] = $jumlah;
         }
 
-        for ($i = 0; $i < sizeof($datakamararr); $i++) {
-            $jumlah = $hasiltmk[$i] / sizeof($datakamararr);
+        for ($i = 0; $i < sizeof($datalokasiarr); $i++) {
+            $jumlah = $hasiltmk[$i] / sizeof($datalokasiarr);
             $hasilpmk[] = $jumlah;
         }
 
         // Perkalian (asli)
-        for ($i = 0; $i < sizeof($datakamararr); $i++) {
+        for ($i = 0; $i < sizeof($datalokasiarr); $i++) {
             $jumlah = $hasilpmk[$i] * $t32;
             $hasilppmk[] = $jumlah;
         }
 
-        // kriteria garasi
+        // kriteria jarak tempat kerja
         $hasilg = [];
         $j = 0;
         $n = 0;
         $i = 0;
-        for ($m = 0; $m < (sizeof($datagarasiarr) * sizeof($datagarasiarr)) + (sizeof($datagarasiarr) - 1); $m++) {
-            if ($i < sizeof($datagarasiarr)) {
-                $hasilg[$n] = $datagarasiarr[$i] / $datagarasiarr[$j];
+        for ($m = 0; $m < (sizeof($datajarak_tempat_kerjaarr) * sizeof($datajarak_tempat_kerjaarr)) + (sizeof($datajarak_tempat_kerjaarr) - 1); $m++) {
+            if ($i < sizeof($datajarak_tempat_kerjaarr)) {
+                $hasilg[$n] = $datajarak_tempat_kerjaarr[$i] / $datajarak_tempat_kerjaarr[$j];
                 $i++;
                 $n++;
             } else {
-                if ($j < sizeof($datagarasiarr)) {
+                if ($j < sizeof($datajarak_tempat_kerjaarr)) {
                     $j++;
                     $i = 0;
                 }
@@ -904,8 +904,8 @@ class AhpController extends Controller
         }
 
         // Jumlah kolom dan baris
-        $barisg = sizeof($datagarasiarr);
-        $kolomg = sizeof($datagarasiarr);
+        $barisg = sizeof($datajarak_tempat_kerjaarr);
+        $kolomg = sizeof($datajarak_tempat_kerjaarr);
         $data2Dg = array();
 
         // konversi jadi array 2d
@@ -931,8 +931,8 @@ class AhpController extends Controller
         $z = 0;
         $hasilbgg = [];
         $i = 0;
-        for ($m = 0; $m < (sizeof($datagarasiarr) * sizeof($datagarasiarr)) + (sizeof($datagarasiarr) - 1); $m++) {
-            if ($i < sizeof($datagarasiarr)) {
+        for ($m = 0; $m < (sizeof($datajarak_tempat_kerjaarr) * sizeof($datajarak_tempat_kerjaarr)) + (sizeof($datajarak_tempat_kerjaarr) - 1); $m++) {
+            if ($i < sizeof($datajarak_tempat_kerjaarr)) {
                 $hasilbgg[$z] = $hasilg[$z] / $hasiljmlg[$i];
                 $i++;
                 $z++;
@@ -961,13 +961,13 @@ class AhpController extends Controller
             $hasiltmg[] = $jumlah;
         }
 
-        for ($i = 0; $i < sizeof($datagarasiarr); $i++) {
-            $jumlah = $hasiltmg[$i] / sizeof($datagarasiarr);
+        for ($i = 0; $i < sizeof($datajarak_tempat_kerjaarr); $i++) {
+            $jumlah = $hasiltmg[$i] / sizeof($datajarak_tempat_kerjaarr);
             $hasilpmg[] = $jumlah;
         }
 
         // Perkalian (asli)
-        for ($i = 0; $i < sizeof($datagarasiarr); $i++) {
+        for ($i = 0; $i < sizeof($datajarak_tempat_kerjaarr); $i++) {
             $jumlah = $hasilpmg[$i] * $t35;
             $hasilppmg[] = $jumlah;
         }
@@ -1002,28 +1002,25 @@ class AhpController extends Controller
 
 
         // Insert data ke table hasils
-        // $tipe = Alternative::select('tipe')->get();
-        $tipe = DB::table('alternatives')
-            ->select('tipe')
+        // $nama = Alternative::select('nama')->get();
+        $nama = DB::table('alternatives')
+            ->select('nama')
             ->get();
 
         $hargat = DB::table('alternatives')
             ->select('harga')
             ->get();
-        $lantait = DB::table('alternatives')
-            ->select('lantai')
+        $fasilitast = DB::table('alternatives')
+            ->select('fasilitas')
             ->get();
-        $kamart = DB::table('alternatives')
-            ->select('kamar')
+        $lokasit = DB::table('alternatives')
+            ->select('lokasi')
             ->get();
         $luast = DB::table('alternatives')
             ->select('luas')
             ->get();
-        $garasit = DB::table('alternatives')
-            ->select('garasi')
-            ->get();
-        $gambart = DB::table('alternatives')
-            ->select('gambar')
+        $jarak_tempat_kerjat = DB::table('alternatives')
+            ->select('jarak_tempat_kerja')
             ->get();
 
         // for ($i = 0; $i < sizeof($datahargaarr); $i++) {
@@ -1036,13 +1033,12 @@ class AhpController extends Controller
 
         for ($i = 0; $i < sizeof($datahargaarr); $i++) {
             Hasil::create([
-                'tipe' => $tipe[$i]->tipe,
-                'lantai' => $lantait[$i]->lantai,
-                'kamar' => $kamart[$i]->kamar,
+                'nama' => $nama[$i]->nama,
+                'fasilitas' => $fasilitast[$i]->fasilitas,
+                'lokasi' => $lokasit[$i]->lokasi,
                 'luas' => $luast[$i]->luas,
                 'harga' => $hargat[$i]->harga,
-                'garasi' => $garasit[$i]->garasi,
-                'gambar' => $gambart[$i]->gambar,
+                'jarak_tempat_kerja' => $jarak_tempat_kerjat[$i]->jarak_tempat_kerja,
                 'ahp' => $hasiljumlah[$i]
             ]);
         }
@@ -1053,10 +1049,10 @@ class AhpController extends Controller
         //     $hasiljumlah,
         //     $json_tipe,
         //     $json_harga,
-        //     $json_lantai,
-        //     $json_kamar,
+        //     $json_fasilitas,
+        //     $json_lokasi,
         //     $json_luas,
-        //     $json_garasi,
+        //     $json_jarak_tempat_kerja,
         //     $hasilppmh,
         //     $hasilppml,
         //     $hasilppmk,
@@ -1091,9 +1087,9 @@ class AhpController extends Controller
         if ($name == 'Harga') {
             $data_alth = Alternative::orderBy('harga', 'asc')
                 ->orderBy('harga', 'asc')
-                ->orderBy('garasi', 'asc')
-                ->orderBy('kamar', 'desc')
-                ->orderBy('lantai', 'desc')
+                ->orderBy('jarak_tempat_kerja', 'asc')
+                ->orderBy('lokasi', 'desc')
+                ->orderBy('fasilitas', 'desc')
                 ->orderBy('luas', 'desc')
                 ->paginate(3);
             $data_crt = SubCriteria::select('name')->distinct()->get();
@@ -1101,12 +1097,12 @@ class AhpController extends Controller
                 'data_pilih' => $data_alth,
                 'data_crt' => $data_crt
             ]);
-        } else if ($name == 'Kamar') {
-            $data_altk = Alternative::orderBy('kamar', 'desc')
+        } else if ($name == 'Lokasi') {
+            $data_altk = Alternative::orderBy('lokasi', 'desc')
                 ->orderBy('harga', 'asc')
-                ->orderBy('garasi', 'asc')
-                ->orderBy('kamar', 'desc')
-                ->orderBy('lantai', 'desc')
+                ->orderBy('jarak_tempat_kerja', 'asc')
+                ->orderBy('lokasi', 'desc')
+                ->orderBy('fasilitas', 'desc')
                 ->orderBy('luas', 'desc')
                 ->paginate(3);
             $data_crt = SubCriteria::select('name')->distinct()->get();
@@ -1114,12 +1110,12 @@ class AhpController extends Controller
                 'data_pilih' => $data_altk,
                 'data_crt' => $data_crt
             ]);
-        } else if ($name == 'Lantai') {
-            $data_altl = Alternative::orderBy('lantai', 'desc')
+        } else if ($name == 'fasilitas') {
+            $data_altl = Alternative::orderBy('fasilitas', 'desc')
                 ->orderBy('harga', 'asc')
-                ->orderBy('garasi', 'asc')
-                ->orderBy('kamar', 'desc')
-                // ->orderBy('lantai', 'desc')
+                ->orderBy('jarak_tempat_kerja', 'asc')
+                ->orderBy('lokasi', 'desc')
+                // ->orderBy('fasilitas', 'desc')
                 ->orderBy('luas', 'desc')
                 ->paginate(3);
             $data_crt = SubCriteria::select('name')->distinct()->get();
@@ -1127,11 +1123,11 @@ class AhpController extends Controller
                 'data_pilih' => $data_altl,
                 'data_crt' => $data_crt
             ]);
-        } else if ($name == 'Garasi') {
-            $data_altg = Alternative::orderBy('garasi', 'asc')
+        } else if ($name == 'Jarak') {
+            $data_altg = Alternative::orderBy('jarak_tempat_kerja', 'asc')
                 ->orderBy('harga', 'asc')
-                ->orderBy('kamar', 'desc')
-                ->orderBy('lantai', 'desc')
+                ->orderBy('lokasi', 'desc')
+                ->orderBy('fasilitas', 'desc')
                 ->orderBy('luas', 'desc')
                 ->paginate(3);
             $data_crt = SubCriteria::select('name')->distinct()->get();
@@ -1142,9 +1138,9 @@ class AhpController extends Controller
         } else {
             $data_alts = Alternative::orderBy('luas', 'desc')
                 ->orderBy('harga', 'asc')
-                ->orderBy('garasi', 'asc')
-                ->orderBy('kamar', 'desc')
-                ->orderBy('lantai', 'desc')
+                ->orderBy('jarak_tempat_kerja', 'asc')
+                ->orderBy('lokasi', 'desc')
+                ->orderBy('fasilitas', 'desc')
                 // ->orderBy('luas', 'desc')
                 ->paginate(3);
             $data_crt = SubCriteria::select('name')->distinct()->get();
@@ -1175,9 +1171,9 @@ class AhpController extends Controller
         if ($name == 'Harga') {
             $data_alth = Alternative::orderBy('harga', 'asc')
                 // ->orderBy('harga', 'asc')
-                ->orderBy('garasi', 'asc')
-                ->orderBy('kamar', 'desc')
-                ->orderBy('lantai', 'desc')
+                ->orderBy('jarak_tempat_kerja', 'asc')
+                ->orderBy('lokasi', 'desc')
+                ->orderBy('fasilitas', 'desc')
                 ->orderBy('luas', 'desc')
                 ->paginate(3);
             $data_crt = SubCriteria::select('name')->distinct()->get();
@@ -1185,12 +1181,12 @@ class AhpController extends Controller
                 'data_rumah' => $data_alth,
                 'data_crt' => $data_crt
             ]);
-        } else if ($name == 'Kamar') {
-            $data_altk = Alternative::orderBy('kamar', 'desc')
+        } else if ($name == 'Lokasi') {
+            $data_altk = Alternative::orderBy('lokasi', 'desc')
                 ->orderBy('harga', 'asc')
-                ->orderBy('garasi', 'asc')
-                // ->orderBy('kamar', 'desc')
-                ->orderBy('lantai', 'desc')
+                ->orderBy('jarak_tempat_kerja', 'asc')
+                // ->orderBy('lokasi', 'desc')
+                ->orderBy('fasilitas', 'desc')
                 ->orderBy('luas', 'desc')
                 ->paginate(3);
             $data_crt = SubCriteria::select('name')->distinct()->get();
@@ -1198,12 +1194,12 @@ class AhpController extends Controller
                 'data_rumah' => $data_altk,
                 'data_crt' => $data_crt
             ]);
-        } else if ($name == 'Lantai') {
-            $data_altl = Alternative::orderBy('lantai', 'desc')
+        } else if ($name == 'fasilitas') {
+            $data_altl = Alternative::orderBy('fasilitas', 'desc')
                 ->orderBy('harga', 'asc')
-                ->orderBy('garasi', 'asc')
-                ->orderBy('kamar', 'desc')
-                // ->orderBy('lantai', 'desc')
+                ->orderBy('jarak_tempat_kerja', 'asc')
+                ->orderBy('lokasi', 'desc')
+                // ->orderBy('fasilitas', 'desc')
                 ->orderBy('luas', 'desc')
                 ->paginate(3);
             $data_crt = SubCriteria::select('name')->distinct()->get();
@@ -1211,11 +1207,11 @@ class AhpController extends Controller
                 'data_rumah' => $data_altl,
                 'data_crt' => $data_crt
             ]);
-        } else if ($name == 'Garasi') {
-            $data_altg = Alternative::orderBy('garasi', 'asc')
+        } else if ($name == 'Jarak') {
+            $data_altg = Alternative::orderBy('jarak_tempat_kerja', 'asc')
                 ->orderBy('harga', 'asc')
-                ->orderBy('kamar', 'desc')
-                ->orderBy('lantai', 'desc')
+                ->orderBy('lokasi', 'desc')
+                ->orderBy('fasilitas', 'desc')
                 ->orderBy('luas', 'desc')
                 ->paginate(3);
             $data_crt = SubCriteria::select('name')->distinct()->get();
@@ -1226,9 +1222,9 @@ class AhpController extends Controller
         } else {
             $data_alts = Alternative::orderBy('luas', 'desc')
                 ->orderBy('harga', 'asc')
-                ->orderBy('garasi', 'asc')
-                ->orderBy('kamar', 'desc')
-                ->orderBy('lantai', 'desc')
+                ->orderBy('jarak_tempat_kerja', 'asc')
+                ->orderBy('lokasi', 'desc')
+                ->orderBy('fasilitas', 'desc')
                 // ->orderBy('luas', 'desc')
                 ->paginate(3);
             $data_crt = SubCriteria::select('name')->distinct()->get();
@@ -1258,9 +1254,9 @@ class AhpController extends Controller
         // dd($name);
         if ($name == 'Harga') {
             $data_alth = Alternative::orderBy('harga', 'asc')
-                ->orderBy('garasi', 'asc')
-                ->orderBy('kamar', 'desc')
-                ->orderBy('lantai', 'desc')
+                ->orderBy('jarak_tempat_kerja', 'asc')
+                ->orderBy('lokasi', 'desc')
+                ->orderBy('fasilitas', 'desc')
                 ->orderBy('luas', 'desc')
                 ->paginate(3);
             $data_crt = SubCriteria::select('name')->distinct()->get();
@@ -1268,11 +1264,11 @@ class AhpController extends Controller
                 'data_rumah' => $data_alth,
                 'data_crt' => $data_crt
             ]);
-        } else if ($name == 'Kamar') {
-            $data_altk = Alternative::orderBy('kamar', 'desc')
+        } else if ($name == 'Lokasi') {
+            $data_altk = Alternative::orderBy('lokasi', 'desc')
                 ->orderBy('harga', 'asc')
-                ->orderBy('garasi', 'asc')
-                ->orderBy('lantai', 'desc')
+                ->orderBy('jarak_tempat_kerja', 'asc')
+                ->orderBy('fasilitas', 'desc')
                 ->orderBy('luas', 'desc')
                 ->paginate(3);
             $data_crt = SubCriteria::select('name')->distinct()->get();
@@ -1280,12 +1276,12 @@ class AhpController extends Controller
                 'data_rumah' => $data_altk,
                 'data_crt' => $data_crt
             ]);
-        } else if ($name == 'Lantai') {
-            $data_altl = Alternative::orderBy('lantai', 'desc')
+        } else if ($name == 'Fasilitas') {
+            $data_altl = Alternative::orderBy('fasilitas', 'desc')
                 ->orderBy('harga', 'asc')
                 ->orderBy('harga', 'asc')
-                ->orderBy('garasi', 'asc')
-                ->orderBy('kamar', 'desc')
+                ->orderBy('jarak_tempat_kerja', 'asc')
+                ->orderBy('lokasi', 'desc')
                 ->orderBy('luas', 'desc')
                 ->paginate(3);
             $data_crt = SubCriteria::select('name')->distinct()->get();
@@ -1293,11 +1289,11 @@ class AhpController extends Controller
                 'data_rumah' => $data_altl,
                 'data_crt' => $data_crt
             ]);
-        } else if ($name == 'Garasi') {
-            $data_altg = Alternative::orderBy('garasi', 'asc')
+        } else if ($name == 'Jarak') {
+            $data_altg = Alternative::orderBy('jarak_tempat_kerja', 'asc')
                 ->orderBy('harga', 'asc')
-                ->orderBy('kamar', 'desc')
-                ->orderBy('lantai', 'desc')
+                ->orderBy('lokasi', 'desc')
+                ->orderBy('fasilitas', 'desc')
                 ->orderBy('luas', 'desc')
                 ->paginate(3);
             $data_crt = SubCriteria::select('name')->distinct()->get();
@@ -1308,9 +1304,9 @@ class AhpController extends Controller
         } else {
             $data_alts = Alternative::orderBy('luas', 'desc')
                 ->orderBy('harga', 'asc')
-                ->orderBy('garasi', 'asc')
-                ->orderBy('kamar', 'desc')
-                ->orderBy('lantai', 'desc')
+                ->orderBy('jarak_tempat_kerja', 'asc')
+                ->orderBy('lokasi', 'desc')
+                ->orderBy('fasilitas', 'desc')
                 ->paginate(3);
             $data_crt = SubCriteria::select('name')->distinct()->get();
             return view('customer/package/indexlogin', [

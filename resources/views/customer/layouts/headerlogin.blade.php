@@ -3,7 +3,7 @@
     <div class="container d-flex align-items-center">
 
         <div class="logo mr-auto">
-            <h1 class="text-light"><a href="/home">SI Perum</a></h1>
+            <h1 class="text-light"><a href="/home">HomeChoice</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="/home"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
@@ -12,9 +12,7 @@
             <ul>
                 <li class="active"><a href="/home">Home</a></li>
                 <li><a href="/home#about">About</a></li>
-                <li><a href="/home#services">Services</a></li>
-                <li><a href="/home#portfolio">Alternative</a></li>
-                <li><a href="/home#team">Team</a></li>
+                <li><a href="/home#services">Alternative</a></li>
                 <li><a href="/home#cta">Ahp</a></li>
                 <li><a href="/home#contact">Contact</a></li>
                 <li class="drop-down"><a href="">Hi, {{ auth()->user()->name }}</a>

@@ -31,8 +31,8 @@
 					<div class="left">
 						<div class="content">
 							<div class="header">
-								<div class="logo text-center"><img src="<?php echo url('/'); ?>/img/logo-dark.png" alt="Klorofil Logo"></div>
-							
+								<!-- <div class="logo text-center"><img src="<?php echo url('/'); ?>/img/logo-dark.png" alt="Klorofil Logo"></div> -->
+							     <p class="lead"> HomeChoice </p>"
 								<p class="lead">Login to your account</p>
 							</div>
 							<form class="form-auth-small" action="{{ route('postlogin') }}" method="post">
@@ -63,7 +63,7 @@
 					<div class="right">
 						<div class="overlay"></div>
 						<div class="content text">
-							<h1 class="heading">SI Sistem Pendukung Keputusan Pemilihan Rumah</h1>
+							<h1 class="heading">Sistem Pendukung Keputusan Pemilihan Perumahan</h1>
 							<h2 class="heading">Dengan menggunakan metode AHP</h2>
 							<!-- <p>by The Bluzz Team</p> -->
 						</div>

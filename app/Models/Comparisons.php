@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Comparisons extends Model
 {
     use HasFactory;
-    protected $fillable = ['tipe', 'lantai','kamar', 'luas', 'harga', 'garasi'];
+    protected $fillable = ['nama', 'fasilitas','lokasi', 'luas', 'harga', 'jarak_tempat_kerja'];
     protected $dates = ['deleted_at'];
 }

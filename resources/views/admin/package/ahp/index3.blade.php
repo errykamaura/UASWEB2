@@ -17,18 +17,18 @@
 							<table class="table table-striped">
 								<thead>
 									<tr>
-										<th width="50px">Variabel</th>
-										<th width="50px">Lantai</th>
-										<th width="50px">Kamar</th>
+									<th width="50px">Variabel</th>
+										<th width="50px">Fasiltas</th>
+										<th width="50px">Lokasi</th>
 										<th width="50px">Luas</th>
 										<th width="50px">Harga</th>
-										<th width="50px">Garasi</th>
+										<th width="50px">Jarak Tempat Kerja</th>
 										<th width="50px">Local Priority</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td>Lantai</td>
+										<td>Fasilitas</td>
 										<td><input type="number" name="k1" value="{{ $k1 }}" readonly></td>
 										<td><input type="number" name="k2" value="{{ $k2 }}" readonly></td>
 										<td><input type="number" name="k3" value="{{ $k3 }}" readonly></td>
@@ -42,7 +42,7 @@
 									<td>{{ $k5 }}</td> -->
 									</tr>
 									<tr>
-										<td>Kamar</td>
+										<td>Lokasi</td>
 										<td><input type="number" name="k6" value="{{ $k6 }}" readonly></td>
 										<td><input type="number" name="k7" value="{{ $k7 }}" readonly></td>
 										<td><input type="number" name="k8" value="{{ $k8 }}" readonly></td>
@@ -84,7 +84,7 @@
 									<td>{{ $k20 }}</td> -->
 									</tr>
 									<tr>
-										<td>Garasi</td>
+										<td>Jarak Tempat Kerja</td>
 										<td><input type="number" name="k21" value="{{ $k21 }}" readonly></td>
 										<td><input type="number" name="k22" value="{{ $k22 }}" readonly></td>
 										<td><input type="number" name="k23" value="{{ $k23 }}" readonly></td>
@@ -104,7 +104,7 @@
 										<td><input type="number" name="k28" value="{{ $k28 }}" readonly></td>
 										<td><input type="number" name="k29" value="{{ $k29 }}" readonly></td>
 										<td><input type="number" name="k30" value="{{ $k30 }}" readonly></td>
-										<td><input type="text" name="" value="Anda Sampai Sini Keren !" readonly></td>
+										<td><input type="text" name="" value="--" readonly></td>
 										<!-- <td>{{ $k26 }}</td>
 									<td>{{ $k27 }}</td>
 									<td>{{ $k28 }}</td>

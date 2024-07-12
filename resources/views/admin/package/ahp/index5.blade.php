@@ -12,19 +12,19 @@
 						<h3 class="panel-title">Hasil Perangkingan</h3>
 					</div>
 					<div class="panel-body">
-						<form action="/admin/ahp/test">
+						<form action="/ahp/bobot/posthasilrekomendasi">
 							<!-- <form action="/admin/ahp/test" method="post"> -->
 							@csrf
 							<table class="table table-striped">
 								<thead>
 									<tr>
 										<th width="50px">Ranking / Nama Kriteria</th>
-										<th witdh="50px">Tipe</th>
-										<th width="50px">Lantai</th>
-										<th width="50px">Kamar</th>
+										<th witdh="50px">Nama Perumahan</th>
+										<th width="50px">Fasilitas</th>
+										<th width="50px">Lokasi</th>
 										<th width="50px">Luas</th>
 										<th width="50px">Harga</th>
-										<th width="50px">Garasi</th>
+										<th width="50px">Jarak Tempat Kerja</th>
 										<th width="50px">Local Priority</th>
 									</tr>
 								</thead>
@@ -56,7 +56,7 @@
 							</table>
 							<div class="row">
 								<div class="col-md-6">
-									<button type="submit" class="btn btn-primary btn-block">Proses AHP Yuk!</button>
+									<button type="submit" class="btn btn-primary btn-block">Perangkingan</button>
 								</div>
 								<div class="col-md-6">
 									<button type="button" class="btn btn-warning btn-block" onclick="kembalibobot();">Cancel</button>

@@ -4,30 +4,28 @@
 <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
   <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
 
-    <!-- Slide 1 -->
-    <div class="carousel-item active">
+   <!-- Slide 1 -->
+   <div class="carousel-item active">
       <div class="carousel-container">
-        <h2 class="animate__animated animate__fadeInDown">Welcome to <span>SPK Perum</span></h2>
+        <h2 class="animate__animated animate__fadeInDown">Welcome to <span>HomeChoice</span></h2>
         <p class="animate__animated fanimate__adeInUp">Sistem pendukung keputusan berbasis website yang menggunakan tampilan bootstrap dan framework laravel, siap membantu anda dalam melakukan pengambilan keputusan</p>
-        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
       </div>
+    </div>>
     </div>
 
-    <!-- Slide 2 -->
-    <div class="carousel-item">
+     <!-- Slide 2 -->
+     <div class="carousel-item">
       <div class="carousel-container">
-        <h2 class="animate__animated animate__fadeInDown">SPK Perum</h2>
+        <h2 class="animate__animated animate__fadeInDown">HomeChoice</h2>
         <p class="animate__animated animate__fadeInUp">Sistem pendukung keputusan ini mendukung untuk membuat keputusan dalam pemilihan rumah sesuai dengan kriteria yang anda inginkan</p>
-        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
       </div>
     </div>
 
     <!-- Slide 3 -->
     <div class="carousel-item">
       <div class="carousel-container">
-        <h2 class="animate__animated animate__fadeInDown">SPK Perum</h2>
+        <h2 class="animate__animated animate__fadeInDown">HomeChoice</h2>
         <p class="animate__animated animate__fadeInUp">Metode yang digunakan sistem ini dalam menghitung hasil kalkulasi adalah metode AHP</p>
-        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
       </div>
     </div>
 
@@ -68,24 +66,24 @@
 
       <div class="section-title" data-aos="zoom-out">
         <h2>About</h2>
-        <p>Apa saja yang bisa dilakukan ?</p>
+        <p>Apa saja yang bisa dilakukan?</p>
       </div>
 
       <div class="row content" data-aos="fade-up">
         <div class="col-lg-6">
           <p>
-            Sistem Pendukung Keputusan dalam pemilihan rumah ini merupakan sistem informasi berbasis website yang dibangun menggunakan framework laravel.
+            Sistem Pendukung Keputusan dalam pemilihan perumahan ini merupakan sistem informasi berbasis website yang dibangun menggunakan framework laravel.
           </p>
           <ul>
-            <li><i class="ri-check-double-line"></i> Sistem ini bisa membantu anda dalam menentukan rumah yang anda inginkan </li>
-            <li><i class="ri-check-double-line"></i> Sistem ini juga memiliki akurasi yang akurat dalam memberikan rekomendasi rumah yang anda inginkan </li>
-            <li><i class="ri-check-double-line"></i> Sistem ini menyajikan ribuan data rumah terbaru yang diambil melalui database terpercaya</li>
+            <li><i class="ri-check-double-line"></i> Sistem ini bisa membantu anda dalam menentukan  yang anda inginkan </li>
+            <li><i class="ri-check-double-line"></i> Sistem ini juga memiliki akurasi yang akurat dalam memberikan rekomendasi perumahan yang anda inginkan </li>
+
           </ul>
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0">
           <p>
             Aplikasi ini dibuat untuk memudahkan pengguna dalam membuat keputusan atau sebagai alat referensi
-            dalam pemilihan rumah yang diinginkan berdasarkan kriteria dan nilai yang bisa ditentukan sesuka hati
+            dalam pemilihan perumahan yang diinginkan berdasarkan kriteria dan nilai yang bisa ditentukan sesuka hati
           </p>
           <a href="#" class="btn-learn-more">Learn More</a>
         </div>
@@ -93,9 +91,8 @@
 
     </div>
   </section><!-- End About Section -->
-
-  <!-- ======= Features Section ======= -->
-  <section id="features" class="features">
+ <!-- ======= Features Section ======= -->
+ <section id="features" class="features">
     <div class="container">
 
       <ul class="nav nav-tabs row d-flex">
@@ -108,7 +105,7 @@
         <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
           <a class="nav-link" data-toggle="tab" href="#tab-2">
             <i class="ri-body-scan-line"></i>
-            <h4 class="d-none d-lg-block">Data tipe rumah dari 15 tipe</h4>
+            <h4 class="d-none d-lg-block">Data Perumahan</h4>
           </a>
         </li>
         <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="200">
@@ -133,11 +130,6 @@
               <p class="font-italic">
                 Sistem informasi ini dibangun dalam bentuk website yang menggunakan framework laravel dan juga tampilan bootstrap.
               </p>
-              <ul>
-                <li><i class="ri-check-double-line"></i> a</li>
-                <li><i class="ri-check-double-line"></i> b</li>
-                <li><i class="ri-check-double-line"></i> c</li>
-              </ul>
               <p>
                 Sistem pendukung keputusan berbasis website yang menggunakan
                 tampilan bootstrap dan framework laravel, siap membantu anda dalam melakukan pengambilan keputusan
@@ -151,18 +143,15 @@
         <div class="tab-pane" id="tab-2">
           <div class="row">
             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-              <h3>Memiliki data tipe rumah lebih dari 15 data</h3>
+              <h3>Memiliki data perumahan</h3>
               <p>
-                Sehingga membuat anda mampu menentukan banyak pilihan sesuai dengan kriteria rumah yang anda mau
+                Sehingga membuat anda mampu menentukan banyak pilihan sesuai dengan kriteria perumahan yang anda mau
               </p>
               <p class="font-italic">
-                Dilengkapi dengan gambar yang menarik membuat tampilan pilihan rumah terlihat lebih nyata
+                Dilengkapi dengan gambar yang menarik membuat tampilan pilihan perumahan terlihat lebih nyata
               </p>
               <ul>
-                <li><i class="ri-check-double-line"></i> Terdapat berbagai pilihan tipe rumah</li>
-                <li><i class="ri-check-double-line"></i> Setiap data memiliki data dan struktur gambar yang sesuai dengan realitas</li>
-                <li><i class="ri-check-double-line"></i> c</li>
-                <li><i class="ri-check-double-line"></i> d</li>
+                <li><i class="ri-check-double-line"></i> Terdapat berbagai pilihan jenis perumahan</li>
               </ul>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -183,10 +172,6 @@
                 <li><i class="ri-check-double-line"></i> Tidak menggunakan banyak tampilan gambar</li>
                 <li><i class="ri-check-double-line"></i> Tidak terdapat iklan</li>
               </ul>
-              <p class="font-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 text-center">
               <img src="assets/img/features-3.png" alt="" class="img-fluid">
@@ -201,15 +186,6 @@
                 Kami membuat tampilan dan struktur proses yang mudah dan berurutan sehingga
                 dapat memudahkan pengguna dalam menggunakan sistem yang kami buat.
               </p>
-              <p class="font-italic">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, ad?
-                Quae officiis quod asperiores. At omnis tempora error totam nulla.
-              </p>
-              <ul>
-                <li><i class="ri-check-double-line"></i> Urutan alur proses sistem yang sederhana</li>
-                <li><i class="ri-check-double-line"></i> </li>
-                <li><i class="ri-check-double-line"></i> </li>
-              </ul>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 text-center">
               <img src="assets/img/features-4.png" alt="" class="img-fluid">
@@ -242,53 +218,53 @@
     <div class="container">
 
       <div class="section-title" data-aos="zoom-out">
-        <h2>Services</h2>
-        <p>What we do offer</p>
+        <h2>Alternative</h2>
+        <p>Kami Merekomendasikan Untuk Anda</p>
       </div>
 
       <div class="row">
         <div class="col-lg-4 col-md-6">
           <div class="icon-box" data-aos="zoom-in-left">
             <div class="icon"><i class="las la-basketball-ball" style="color: #ff689b;"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <h4 class="title"><a href="">CitraLand</a></h4>
+            <p class="description">Untuk menghadirkan atmosfer THE PREMIUM LIVING, CITRALAND TEGAL diperkaya dengan konsep inovatif dan unik, melalui hadirnya EXQUISITE SHOPHOUSES, EXQUISITE BACKYARD dan EXQUISITE SIDEPARK. Konsep ini berfokus pada terciptanya hunian yang berkualitas, nyaman dan privasi yang tinggi bagi penghuni, di tengah aktivitas bisnis yang hidup. Anda akan menemui penataan lengkap yang teduh dan asri dan fasilitas keluarga penunjang kebutuhan sosial dan kebugaran.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
           <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100">
             <div class="icon"><i class="las la-book" style="color: #e9bf06;"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <h4 class="title"><a href="">Griya Tegal Asri</a></h4>
+            <p class="description">Griya Tegal Asri merupakan sebuah  perumahan yang terletak di lokasi strategis di daerah Tegal Asri, yang menawarkan hunian yang nyaman dan aman bagi keluarga Anda.  Perumahan ini memiliki fasilitas lengkap dan berbagai tipe rumah yang siap memenuhi kebutuhan Anda.</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
           <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
             <div class="icon"><i class="las la-file-alt" style="color: #3fcdc7;"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <h4 class="title"><a href="">Sapphire Residence</a></h4>
+            <p class="description">Sapphire Residence Tegal menjadi sangat nyaman karena memiliki lokasi yang strategis, berada di dua sisi kota, dan di tunjang dengan akses jalan utama, membuat lokasi tersebut mudah dijangkau.  Sebagai sarana investasi, hunian kami memiliki jaminan terus mengalami kenaikan nilai, karena berada di lokasi yang sangat dekat dengan kawasan perkotaan. Selain itu, sebagai kota industri dan jasa, Tegal merupakan kota potensial yang terus berkembang dan memberi peluang besar terhadap pertumbuhan investasi.</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mt-5">
+        <!-- <div class="col-lg-4 col-md-6 mt-5">
           <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="300">
             <div class="icon"><i class="las la-tachometer-alt" style="color:#41cf2e;"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <h4 class="title"><a href="">Amira Cluster</a></h4>
+            <p class="description">Amira Cluster Slawi Tegal. Dengan spek bangunan yg sangat bagus. Beton Bertulang, Kusen Alumunium, Dinding bata merah, Atap rangka baja ringan, Genteng Beton, Lantai Ruang dalam Granit 6060, Plafon Gypsum, Listrik 1300 watt, Pintu Panel, Sanitary by wolf, Taman mini, Carport keramik, Air pdam jet, grountank Security 24 Jam.</p>
           </div>
-        </div>
+        </div> -->
 
         <div class="col-lg-4 col-md-6 mt-5">
           <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="400">
             <div class="icon"><i class="las la-globe-americas" style="color: #d6ff22;"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            <h4 class="title"><a href="">Mutiara Estate</a></h4>
+            <p class="description">Perumahan Mutiara Estate Tegal adalah kompleks perumahan modern yang terletak di kawasan strategis di Tegal. Dikenal karena desainnya yang menarik dan fasilitas yang lengkap, perumahan ini menyediakan lingkungan yang nyaman dan aman untuk keluarga. Dilengkapi dengan taman hijau, area bermain anak, dan aksesibilitas yang baik ke fasilitas umum, Mutiara Estate menjadi pilihan yang populer bagi mereka yang mencari hunian yang berkualitas di Tegal.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mt-5">
           <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="500">
             <div class="icon"><i class="las la-clock" style="color: #4680ff;"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            <h4 class="title"><a href="">Graha Candra Loka</a></h4>
+            <p class="description">Perumahan Graha Candra Loka adalah sebuah kompleks perumahan yang terletak di lokasi strategis di Kota Tegal. Menawarkan lingkungan yang nyaman dan aman, perumahan ini dilengkapi dengan fasilitas modern seperti taman, lapangan olahraga, dan area bermain anak. Graha Candra Loka juga dikenal karena desain arsitektur yang menarik dan keamanan yang terjamin, menjadikannya pilihan ideal untuk keluarga yang mencari hunian yang berkualitas di Tegal.</p>
           </div>
         </div>
       </div>
@@ -296,158 +272,9 @@
     </div>
   </section><!-- End Services Section -->
 
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
 
-      <div class="section-title" data-aos="zoom-out">
-        <h2>Alternative</h2>
-        <p>What we've recommend for you</p>
-      </div>
-
-      @foreach($data_crt as $DC)
-      <!-- <form action="{{ route('postaltuser') }}" method="post"> -->
-      <form action="{{ route('postaltuserlogin') }}" method="post">
-        @endforeach
-        @csrf
-        <div class="row">
-          <div class="col-md-3">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-              <select class="form-control" name="cbname" id="cbname">
-                @if($data_crt->count() > 0)
-                @if(isset($data_crt))
-                @foreach($data_crt as $DC)
-                <option value="{{ $DC->name }}">{{ $DC->name }}</option>
-                @endforeach
-                @else
-                @foreach($data_crt as $DC)
-                <option value="{{ $DC->name }}">{{ $DC->name }}</option>
-                @endforeach
-                @endif
-                @else
-                <option value="none" disabled>Data alternative tidak tersedia</option>
-                @endif
-              </select>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <!-- <button type="submit"><i class="fa fa-refresh"></i>Refresh</button> -->
-            <div class="text-center"><button type="submit">Refresh</button></div>
-          </div>
-        </div>
-      </form>
-      <br>
-      <br>
-      <!-- <ul id="portfolio-flters" class="d-flex justify-content-end" data-aos="fade-up">
-        <li data-filter="*" class="filter-active">All</li>
-        <li data-filter=".filter-app">App</li>
-        <li data-filter=".filter-card">Card</li>
-        <li data-filter=".filter-web">Web</li>
-      </ul> -->
-
-      <div class="row portfolio-container" data-aos="fade-up">
-        @if($data_rumah->count() > 0)
-        @foreach($data_rumah as $DR)
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-img"><img src="{{ url('/data_file/'.$DR->gambar) }}" class="img-fluid" alt="{{ $DR->gambar }}"></div>
-          <div class="portfolio-info">
-            <h4>{{ $DR->tipe }}</h4>
-            <p>Rp. {{ $DR->harga }}</p>
-            <a href="{{ url('/data_file/'.$DR->gambar) }}" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="/detail/{{ $DR->tipe }}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-        @endforeach
-        @else
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
-          <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>App</p>
-            <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
-          </div>
-        </div>
-        @endif
-      </div>
-
-    </div>
-  </section><!-- End Portfolio Section -->
-
-  <!-- ======= Testimonials Section ======= -->
-  <section id="testimonials" class="testimonials">
-    <div class="container">
-
-      <div class="section-title" data-aos="zoom-out">
-        <h2>Testimonials</h2>
-        <p>What they are saying about us</p>
-      </div>
-
-      <div class="owl-carousel testimonials-carousel" data-aos="fade-up">
-
-        <div class="testimonial-item">
-          <p>
-            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-          </p>
-          <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-          <h3>Saul Goodman</h3>
-          <h4>Ceo &amp; Founder</h4>
-        </div>
-
-        <div class="testimonial-item">
-          <p>
-            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-          </p>
-          <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-          <h3>Sara Wilsson</h3>
-          <h4>Designer</h4>
-        </div>
-
-        <div class="testimonial-item">
-          <p>
-            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-            Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-          </p>
-          <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-          <h3>Jena Karlis</h3>
-          <h4>Store Owner</h4>
-        </div>
-
-        <div class="testimonial-item">
-          <p>
-            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-          </p>
-          <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-          <h3>Matt Brandon</h3>
-          <h4>Freelancer</h4>
-        </div>
-
-        <div class="testimonial-item">
-          <p>
-            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-            Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-          </p>
-          <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-          <h3>John Larson</h3>
-          <h4>Entrepreneur</h4>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Testimonials Section -->
-
-  <!-- ======= F.A.Q Section ======= -->
-  <section id="faq" class="faq">
+ <!-- ======= F.A.Q Section ======= -->
+ <section id="faq" class="faq">
     <div class="container">
 
       <div class="section-title" data-aos="zoom-out">
@@ -461,7 +288,7 @@
           <a data-toggle="collapse" class="" href="#faq1">Data Rumah tidak terintegrasi<i class="icofont-simple-up"></i></a>
           <div id="faq1" class="collapse show" data-parent=".faq-list">
             <p>
-              Data yang digunakan adalah data rumah yang dijual pada wilayah kota Surabaya.
+              Data yang digunakan adalah data perumahan yang terdapat pada Kota Tegal dan Kabupaten Tegal.
             </p>
           </div>
         </li>
@@ -507,93 +334,6 @@
     </div>
   </section><!-- End F.A.Q Section -->
 
-  <!-- ======= Team Section ======= -->
-  <section id="team" class="team">
-    <div class="container">
-
-      <div class="section-title" data-aos="zoom-out">
-        <h2>Team</h2>
-        <p>Our Hardworking Team</p>
-      </div>
-
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up">
-            <div class="member-img">
-              <img src="assets/img/team/Dimz.jpeg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href="https://www.instagram.com/dimazivan/" target="_blank"><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Dimaz Ivan Perdana</h4>
-              <span>Chief Executive Officer</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="assets/img/team/Amel.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href="https://www.instagram.com/amalia_indriani/" target="_blank"><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Putu Ayu Amalia Indriani</h4>
-              <span>Product Manager</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-img">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href=""><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Eka Hirinda Zulfa</h4>
-              <span>CTO</span>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-img">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href="https://www.instagram.com/ekahirinda/" target="_blank"><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Eka Hirinda Zulfa</h4>
-              <span>Accountant</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Team Section -->
 
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact">
@@ -611,13 +351,13 @@
             <div class="address">
               <i class="icofont-google-map"></i>
               <h4>Location:</h4>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>Tegal, Jawa Tengah</p>
             </div>
 
             <div class="email">
               <i class="icofont-envelope"></i>
               <h4>Email:</h4>
-              <p>info@example.com</p>
+              <p>erryka@gmail.com</p>
             </div>
 
             <div class="phone">

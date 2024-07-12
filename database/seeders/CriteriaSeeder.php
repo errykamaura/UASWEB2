@@ -14,24 +14,7 @@ class CriteriaSeeder extends Seeder
      */
     public function run(){
         Criteria::create([
-            'code' => 'K001',
-            'name' => 'Lantai'
-        ]);
-        Criteria::create([
-            'code' => 'K002',
-            'name' => 'Kamar'
-        ]);
-        Criteria::create([
-            'code' => 'K003',
-            'name' => 'Luas'
-        ]);
-        Criteria::create([
-            'code' => 'K004',
-            'name' => 'Harga'
-        ]);
-        Criteria::create([
-            'code' => 'K005',
-            'name' => 'Garasi'
+            
         ]);
     }
 }

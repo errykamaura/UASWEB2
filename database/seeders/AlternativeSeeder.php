@@ -14,14 +14,7 @@ class AlternativeSeeder extends Seeder
     public function run()
     {
         Alternative::create([
-            'tipe' => 'R001',
-            'lantai' => 'Jl. Kebon Raya No. 01',
-            'kamar' => 'Perumahan',
-            'luas' => '1000',
-            'harga' => '100000000',
-            'garasi' => 'Lengkap',
-            'keterangan' => 'Lain-lain',
-            'gambar' => '',
+           
         ]);
     }
 }

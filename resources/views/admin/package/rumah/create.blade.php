@@ -15,13 +15,13 @@
                             @csrf
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-home"></i></span>
-                                <input class="form-control" placeholder="Tipe Rumah" name="tipe" type="text">
+                                <input class="form-control" placeholder="Nama Perumahan" name="nama" type="text">
                             </div>
                             <br>
-                            <p>Jumlah Lantai</p>
+                            <p>Fasilitas</p>
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-home"></i></span>
-                                <select class="form-control" name="cblantai">
+                                <select class="form-control" name="cbfasilitas">
                                     @if($data_crtlt->count() > 0)
                                     @foreach($data_crtlt as $DCLT)
                                     <option value="{{ $DCLT->nilaik }}">{{ $DCLT->nilaik }}</option>
@@ -32,10 +32,10 @@
                                 </select>
                             </div>
                             <br>
-                            <p>Jumlah Kamar</p>
+                            <p>Lokasi</p>
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-bed"></i></span>
-                                <select class="form-control" name="cbkamar">
+                                <select class="form-control" name="cblokasi">
                                     @if($data_crtkm->count() > 0)
                                     @foreach($data_crtkm as $DCKM)
                                     <option value="{{ $DCKM->nilaik }}">{{ $DCKM->nilaik }}</option>
@@ -57,10 +57,10 @@
                                 <input class="form-control" placeholder="Harga Rumah" name="harga" type="Number">
                             </div>
                             <br>
-                            <p>Garasi</p>
+                            <p>Jarak Tempat Kerja</p>
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-car"></i></span>
-                                <select class="form-control" name="cbgarasi">
+                                <select class="form-control" name="cbjarak_tempat_kerja">
                                     @if($data_crtgr->count() > 0)
                                     @foreach($data_crtgr as $DCGR)
                                     <option value="{{ $DCGR->nilaik }}">{{ $DCGR->nilaik }}</option>
@@ -74,12 +74,12 @@
                                 <span class="input-group-addon"><i class="fa fa-car"></i></span>
                                 <input class="form-control" placeholder="Garasi" name="garasi" type="text">
                             </div> -->
-                            <br>
+                            <!-- <br>
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-user"></i></span>
                                 <input class="form-control" placeholder="Keterangan" name="keterangan" type="text">
                             </div>
-                            <br>
+                            <br> -->
                             <!-- <div class="">
                                 <p>Gambar Rumah</p>
                                 <input type="file" class="form-control" id="gambar" name="gambar">

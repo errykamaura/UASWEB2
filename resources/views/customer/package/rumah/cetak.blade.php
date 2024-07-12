@@ -15,7 +15,7 @@
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th class="text-center">Tipe Rumah : {{ $DR->tipe }}</th>
+                                    <th class="text-center">Nama Perumahan : {{ $DR->nama }}</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -28,7 +28,7 @@
                         </table>
                         <p>Berikut merupakan hasil rekomendasi rumah yang dihitung berdasarkan nilai bobot kriteria yang anda berikan</p>
                         <p>Hasil nilai ahp yang telah dihitung adalah sebesar <strong>{{ $DR->ahp }}</strong></p>
-                        <p>Untuk melihat detail rumah lebih lanjut Anda menekan link sebagai berikut : <a href="/detail/{{ $DR->tipe }}">{{ $DR->tipe }}</a></p>
+                        <p>Untuk melihat detail rumah lebih lanjut Anda menekan link sebagai berikut : <a href="/detail/{{ $DR->nama }}">{{ $DR->nama }}</a></p>
                         <p style="margin-top: 500px;">
                             <div class="copyright">
                                 &copy; Copyright <strong><span>SPK Perum</span></strong>. All Rights Reserved

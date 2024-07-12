@@ -19,7 +19,7 @@
                         <form action="{{ route('postalt') }}" method="post">
                             @endforeach
                             @csrf
-                            <div class="row">
+                            <!-- <div class="row">
                                 <div class="col-md-3">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-file-text"></i></span>
@@ -39,7 +39,7 @@
                                             @endif
                                         </select>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="col-md-3">
                                     <button type="submit"><i class="fa fa-refresh"></i>Refresh</button>
                                 </div>
@@ -50,14 +50,13 @@
                             <thead>
                                 <tr>
                                     <th>No.</th>
-                                    <th width="100px">Tipe Rumah</th>
-                                    <th>Jumlah Lantai</th>
-                                    <th>Kamar Tidur</th>
+                                    <th width="100px">Nama Peruumahan</th>
+                                    <th>Fasilitas</th>
+                                    <th>Lokasi</th>
                                     <th width="90px">Luas Tanah</th>
                                     <th>Harga</th>
-                                    <th>Garasi</th>
-                                    <th>Keterangan</th>
-                                    <th>Gambar Rumah</th>
+                                    <th>Jarak Tempat Kerja</th>
+            
                                     <!-- <th>Hasil AHP</th> -->
                                 </tr>
                             </thead>
@@ -72,14 +71,12 @@
                                         echo $no++;
                                         ?>
                                     </td>
-                                    <td>{{ $DP->tipe }}</td>
-                                    <td>{{ $DP->lantai }}</td>
-                                    <td>{{ $DP->kamar }}</td>
+                                    <td>{{ $DP->nama }}</td>
+                                    <td>{{ $DP->fasilitas }}</td>
+                                    <td>{{ $DP->lokasi }}</td>
                                     <td>{{ $DP->luas }} M<sup>2</sup></td>
                                     <td>Rp. {{ $DP->harga }}</td>
-                                    <td>{{ $DP->garasi }}</td>
-                                    <td>{{ $DP->keterangan }}</td>
-                                    <td><img src="{{ url('/data_file/'.$DP->gambar) }}" alt="{{ $DP->gambar }}" width="200px" height="100px"></td>
+                                    <td>{{ $DP->jarak_tempat_kerja }} KM</td>
                                     <td></td>
                                 </tr>
                                 @endforeach

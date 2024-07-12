@@ -29,12 +29,12 @@
             </div>
 
             <div class="portfolio-info">
-                <h3>Rumah Tipe : {{ $DR->tipe }}</h3>
+                <h3>Rumah Tipe : {{ $DR->nama }}</h3>
                 <ul>
-                    <li><strong>Harga</strong>: {{ $DR->tipe }}</li>
+                    <li><strong>Harga</strong>: {{ $DR->nama }}</li>
                     <li><strong>Luas Tanah</strong>: {{ $DR->luas }}</li>
                     <li><strong>Jumlah Kamar</strong>: {{ $DR->kamar }}</li>
-                    <li><strong>Jumlah Lantai</strong>: {{ $DR->lantai }}</li>
+                    <li><strong>Fasilitas</strong>: {{ $DR->fasilitas }}</li>
                     <li><strong>Garasi</strong>: {{ $DR->garasi }}</li>
                 </ul>
             </div>
@@ -65,7 +65,7 @@
                     <li><strong>Harga</strong>: </li>
                     <li><strong>Luas Tanah</strong>: </li>
                     <li><strong>Jumlah Kamar</strong>: </li>
-                    <li><strong>Jumlah Lantai</strong>: </li>
+                    <li><strong>Fasilitasi</strong>: </li>
                     <li><strong>Garasi</strong>: </li>
                 </ul>
             </div>

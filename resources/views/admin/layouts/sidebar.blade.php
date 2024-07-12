@@ -12,7 +12,7 @@
 					<div id="subPages1" class="collapse ">
 						<ul class="nav">
 							<li><a href="/admin/user"><i class="lnr lnr-user"></i> <span>User</span></a></li>
-							<li><a href="/admin/rumah"><i class="lnr lnr-map-marker"></i> <span>Rumah</span></a></li>
+							<li><a href="/admin/rumah"><i class="lnr lnr-map-marker"></i> <span>Perumahan</span></a></li>
 							<li><a href="/admin/kriteria"><i class="fa fa-random"></i> <span>Kriteria</span></a></li>
 							<li><a href="/admin/sub"><i class="fa fa-random"></i> <span>Sub Kriteria</span></a></li>
 						</ul>
@@ -29,7 +29,8 @@
 							<li><a href="/ahp/bobot"><i class="fa fa-random"></i>Bobot Kriteria</a></li>
 							<!-- <li><a href="/admin/ahp/bobot/postbobot"><i class="fa fa-random"></i>Normalisasi Matriks</a></li> -->
 							<!-- <li><a href="/admin/ahp/hasil"><i class="fa fa-random"></i>Hasil Perhitungan</a></li> -->
-							<li><a href="/ahp/bobot/kesimpulan"><i class="fa fa-random"></i>Laporan Perhitungan</a></li>
+							<!-- <li><a href="/detail"><i class="fa fa-random"></i>Hasil</a></li> -->
+							<li><a href="/ahp/bobot/detail/{id}"><i class="fa fa-random"></i>Hasil</a></li> 
 						</ul>
 					</div>
 				</li>
